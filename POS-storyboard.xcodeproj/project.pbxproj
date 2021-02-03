@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,6 +28,7 @@
 		7BA4647523CB50E300D67412 /* AddTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA4647423CB50E300D67412 /* AddTableViewCell.swift */; };
 		7BA4647723CB592600D67412 /* AddChooseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA4647623CB592600D67412 /* AddChooseTableViewCell.swift */; };
 		7BA4647923CB597900D67412 /* AddChooseAnswerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA4647823CB597900D67412 /* AddChooseAnswerTableViewCell.swift */; };
+		F2958A9925CAA6CC008500D3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F2958A9825CAA6CC008500D3 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2958A9925CAA6CC008500D3 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +162,9 @@
 			dependencies = (
 			);
 			name = "POS-storyboard";
+			packageProductDependencies = (
+				F2958A9825CAA6CC008500D3 /* Alamofire */,
+			);
 			productName = "POS-storyboard";
 			productReference = 7B49788023C70B5400EB865C /* POS-storyboard.app */;
 			productType = "com.apple.product-type.application";
@@ -188,6 +193,9 @@
 				Base,
 			);
 			mainGroup = 7B49787723C70B5400EB865C;
+			packageReferences = (
+				F2958A9725CAA6CC008500D3 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 7B49788123C70B5400EB865C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -432,6 +440,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F2958A9725CAA6CC008500D3 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F2958A9825CAA6CC008500D3 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F2958A9725CAA6CC008500D3 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		7B49788C23C70B5400EB865C /* POS_storyboard.xcdatamodeld */ = {
